@@ -6,7 +6,6 @@ export interface ProductI{
     description: string;
     image: string;
 }
-
 export interface VehiculosI{
     id: number;
     name: string;

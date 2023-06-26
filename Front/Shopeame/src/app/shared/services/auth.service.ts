@@ -26,4 +26,9 @@ export class AuthService {
 
     return user?.role;
   }
+
+  logOut(){
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+  }
 }

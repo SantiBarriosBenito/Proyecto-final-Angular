@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProductI } from 'src/app/interfaces/model';
+import { VehiculosI } from 'src/app/interfaces/model';
 import { ServicesService } from 'src/app/shared/services/services.service';
 
 
@@ -10,7 +10,7 @@ import { ServicesService } from 'src/app/shared/services/services.service';
 })
 export class ProductsComponent {
 
-productList!: ProductI[];
+productList!: VehiculosI[];
 
 constructor(private productApi: ServicesService){}
 

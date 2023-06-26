@@ -38,17 +38,13 @@ mirarDetalle (id:any) {
   }
 
   filtrarCategorias(categoria:string){
-    console.log(categoria);
+    this.categoriaList=this.productList.filter((item) => 
+      item.category == categoria
+    )
     
-    this.categoriaList=this.productList.filter((item) => {
-      item.category === categoria
-
-    })
-    console.log(this.categoriaList);
-    
-    this.filtroList=this.productList.filter((item) => {
-      item.category === categoria
-    })
+    this.filtroList=this.productList.filter((item) => 
+       item.category == categoria
+    )
   }
 
 }

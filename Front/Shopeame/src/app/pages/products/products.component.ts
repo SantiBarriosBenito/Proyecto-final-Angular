@@ -12,12 +12,15 @@ import { Router } from '@angular/router';
 export class ProductsComponent {
 
 productList!: VehiculosI[];
+categoriaList!: VehiculosI[];
+filtroList!: VehiculosI[];
 
 constructor(private productApi: ServicesService, public authApi: AuthService, private router: Router){}
 
 ngOnInit(): void {
   this.productApi.getProducts().subscribe((data:any) => {
-    this.productList = data;
+    this.productList = [...data];
+    this.filtroList = [...data];
   })
 }
 
@@ -28,6 +31,24 @@ mirarDetalle (id:any) {
    {
     this.router.navigate([`/products/${id}`]);
    }   
+  }
+
+  filtrarDatos(){
+    
+  }
+
+  filtrarCategorias(categoria:string){
+    console.log(categoria);
+    
+    this.categoriaList=this.productList.filter((item) => {
+      item.category === categoria
+
+    })
+    console.log(this.categoriaList);
+    
+    this.filtroList=this.productList.filter((item) => {
+      item.category === categoria
+    })
   }
 
 }

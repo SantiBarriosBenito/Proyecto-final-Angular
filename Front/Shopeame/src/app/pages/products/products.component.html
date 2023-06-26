@@ -1,6 +1,14 @@
+<input type="text" (input)="filtrarDatos()" #filtro>
+<select (change)="filtrarCategorias(categorias.value)" #categorias>
+    <option value="" >Todas</option>
+    <option value="Transporte">Camiones</option>
+    <option value="Automóviles">Autos</option>
+    <option value="Motos">Motos</option>
+    
+  </select>
 <section >
     <!-- <article *ngFor="let product of productList" routerLink="/products/{{product.id}}"> -->
-    <article *ngFor="let product of productList" (click)="mirarDetalle(product.id)">
+    <article *ngFor="let product of filtroList" (click)="mirarDetalle(product.id)">
         <div class="contenedorimg" >
             <img src="{{product?.image}}" alt="{{product.name}}" >
         </div>

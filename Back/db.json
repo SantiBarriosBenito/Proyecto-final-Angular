@@ -1,4 +1,5 @@
-[
+{
+  "vehiculos": [
   {
     "id": "1",
     "name": "Camión de carga pesada",
@@ -239,4 +240,6 @@
     "description": "Moto trail versátil para todo tipo de terrenos y aventuras",
     "image": "https://i.pinimg.com/originals/66/6c/2e/666c2e8cf3e1b3e606e01700b3de1124.png"
   }
-]
+ ],
+ "users": []
+}

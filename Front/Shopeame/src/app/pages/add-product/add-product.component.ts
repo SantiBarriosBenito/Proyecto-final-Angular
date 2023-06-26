@@ -22,7 +22,8 @@ export class AddProductComponent  implements OnInit{
       name: ["", [Validators.required]],
       price: ["", [Validators.required]],
       description: ["", [Validators.required]],
-      image: ["", [Validators.required]]
+      image: ["", [Validators.required]],
+      category: ["", [Validators.required]],
     })
     this.productForm.valueChanges.subscribe((data) => {
       this.product = data;

@@ -19,8 +19,17 @@
         <label for="description">Descripción</label>
         <input id="description"  formControlName="description" type="text"/>
         <p *ngIf= "(submitted && productForm?.get('description')?.hasError('required'))">Este campo es requerido</p>
+        
     </div>
-    
+    <div class="custom-select-wrapper">
+        <select class="custom-select" formControlName="category">
+          <option value="" selected disabled hidden>Categorias</option>
+          <option value="Camiones">Camiones</option>
+          <option value="Autos">Autos</option>
+          <option value="Motos">Motos</option>
+          
+        </select>
+      </div>
     <button>Añadir producto</button>
 </form>
 

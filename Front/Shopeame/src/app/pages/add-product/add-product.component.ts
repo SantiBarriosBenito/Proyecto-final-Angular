@@ -2,7 +2,7 @@ import { ServicesService } from 'src/app/shared/services/services.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { ProductI } from 'src/app/interfaces/model';
+import { VehiculosI} from 'src/app/interfaces/model';
 
 @Component({
   selector: 'app-add-product',
@@ -12,7 +12,7 @@ import { ProductI } from 'src/app/interfaces/model';
 export class AddProductComponent  implements OnInit{
 
   productForm! : FormGroup;
-  product!: ProductI;
+  product!: VehiculosI;
   submitted:boolean = false;
 
 

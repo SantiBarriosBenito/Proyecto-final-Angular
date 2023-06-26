@@ -1,7 +1,7 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { ServicesService } from './../../shared/services/services.service';
 import { Component, OnInit } from '@angular/core';
-import { ProductI } from 'src/app/interfaces/model';
+import { VehiculosI } from 'src/app/interfaces/model';
 
 @Component({
   selector: 'app-product-detail',
@@ -11,7 +11,7 @@ import { ProductI } from 'src/app/interfaces/model';
 export class ProductDetailComponent implements OnInit{
 
   id!: number;
-  product!: ProductI;
+  product!: VehiculosI;
   
   constructor(private productApi: ServicesService, private activatedRoute:ActivatedRoute, private router: Router){}
 

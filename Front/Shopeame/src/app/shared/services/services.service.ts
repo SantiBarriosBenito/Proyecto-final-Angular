@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ProductI } from 'src/app/interfaces/model';
+import { VehiculosI } from 'src/app/interfaces/model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServicesService {
   private id!:number;
-  private product!:ProductI;
+  private product!:VehiculosI;
   constructor(private http: HttpClient) { }
 
   getProducts(){
@@ -18,15 +18,15 @@ export class ServicesService {
     return this.http.get(`http://localhost:3000/products/${id}`);
   }
 
-  postProduct(product:ProductI){
+  postProduct(product:VehiculosI){
     return this.http.post(`http://localhost:3000/products`, product);
   }
 
-  putProduct(product:ProductI, id:number){
+  putProduct(product:VehiculosI, id:number){
     return this.http.put(`http://localhost:3000/products/${id}`, product);
   }
 
-  setProduct(product:ProductI, id:number){
+  setProduct(product:VehiculosI, id:number){
     this.product = product;
     this.id = id;
   }

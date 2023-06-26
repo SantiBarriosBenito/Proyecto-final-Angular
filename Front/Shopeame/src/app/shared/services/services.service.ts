@@ -11,19 +11,19 @@ export class ServicesService {
   constructor(private http: HttpClient) { }
 
   getProducts(){
-    return this.http.get("http://localhost:3000/products");
+    return this.http.get("http://localhost:3000/vehiculos");
   }
 
   getProductsById(id:number){
-    return this.http.get(`http://localhost:3000/products/${id}`);
+    return this.http.get(`http://localhost:3000/vehiculos/${id}`);
   }
 
   postProduct(product:VehiculosI){
-    return this.http.post(`http://localhost:3000/products`, product);
+    return this.http.post(`http://localhost:3000/vehiculos`, product);
   }
 
   putProduct(product:VehiculosI, id:number){
-    return this.http.put(`http://localhost:3000/products/${id}`, product);
+    return this.http.put(`http://localhost:3000/vehiculos/${id}`, product);
   }
 
   setProduct(product:VehiculosI, id:number){
@@ -32,7 +32,7 @@ export class ServicesService {
   }
 
   deleteProduct(id:number){
-    return this.http.delete(`http://localhost:3000/products/${id}`);
+    return this.http.delete(`http://localhost:3000/vehiculos/${id}`);
   }
 
   getMyProduct(){

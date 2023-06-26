@@ -21,14 +21,18 @@ export class AuthService {
     return localStorage.getItem('token');
   }
 
+  getUsuario(){
+    return localStorage.getItem('usuario');
+  }
+
   getRole(){
-    let user = JSON.parse(String(localStorage.getItem('user')));
+    let user = JSON.parse(String(localStorage.getItem('usuario')));
 
     return user?.role;
   }
 
   logOut(){
     localStorage.removeItem('token');
-    localStorage.removeItem('user');
+    localStorage.removeItem('usuario');
   }
 }

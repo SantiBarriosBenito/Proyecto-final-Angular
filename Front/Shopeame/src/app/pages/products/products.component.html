@@ -1,5 +1,6 @@
 <section >
-    <article *ngFor="let product of productList" routerLink="/products/{{product.id}}">
+    <!-- <article *ngFor="let product of productList" routerLink="/products/{{product.id}}"> -->
+    <article *ngFor="let product of productList" (click)="mirarDetalle(product.id)">
         <div class="contenedorimg" >
             <img src="{{product?.image}}" alt="{{product.name}}" >
         </div>

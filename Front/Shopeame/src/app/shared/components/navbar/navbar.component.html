@@ -12,18 +12,19 @@
             <img src="../../../../assets/products.png" alt="Productos" class="icono">
             <a routerLink="/products">Productos</a>
         </div>
-        <div class="container">
+        <div *ngIf="authApi.getToken()"  class="container">
             <img src="../../../../assets/addproducts.png" alt="Añadir productos" class="icono">
             <a routerLink="/add">Añadir productos</a>
         </div>
     </nav>
     <nav class="login">
-        <div class="container">
+        <div *ngIf="!authApi.getToken()" class="container">
             <a routerLink="/login">Login</a>
         </div>
-        <div class="container">
+        <div *ngIf="!authApi.getToken()" class="container">
             <a routerLink="/register">Register</a>
         </div>
+        <p *ngIf="authApi.getToken()">{{authApi.getUsuario()}}</p>
         <button  *ngIf="authApi.getToken()" (click)="logout()">Logout</button>
     </nav>
 </article>

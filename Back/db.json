@@ -1,113 +1,254 @@
-{
-  "products": [
-    {
-      "id": 1,
-      "name": "Zapatos Vintage",
-      "price": 49.99,
-      "description": "Bellos zapatos antiguos para Hipsters.",
-      "stars": 4.5,
-      "image": "https://i.ibb.co/4j85tBM/shoes.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Lapiceros de colores",
-      "price": 1.99,
-      "description": "Estupendos bolígrafos de colores.",
-      "stars": 1,
-      "image": "https://i.ibb.co/s5m7HKt/lapiceros.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Pantalón",
-      "price": 49.99,
-      "description": "Pantalón de moto para evitar heridas.",
-      "stars": 4,
-      "image": "https://i.ibb.co/6nnVkNY/pantalon.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Cuaderno de colores",
-      "price": 7.25,
-      "description": "Excelente cuaderno para que apuntes tus clases.",
-      "stars": 3.5,
-      "image": "https://i.ibb.co/Jr3FHVd/cuaderno.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Jarabe marca blanca",
-      "price": 12.5,
-      "description": "No cura el COVID, pero está muy rico.",
-      "stars": 1,
-      "image": "https://i.ibb.co/mhgHWnf/jarabe.jpg"
-    },
-    {
-      "id": 7,
-      "name": "Maceta de diseño",
-      "price": 9.99,
-      "description": "Maceta de diseño a precio económico.",
-      "stars": 5,
-      "image": "https://i.ibb.co/MZSrV6q/maceta.jpg"
-    },
-    {
-      "id": 8,
-      "name": "Gato Persa",
-      "price": 100,
-      "description": "No sé si es legal vender animales online...",
-      "stars": 3,
-      "image": "https://i.ibb.co/1zPPBjx/gato.jpg"
-    },
-    {
-      "name": "Cartera",
-      "price": "23",
-      "description": "Cartera de cuero",
-      "image": "https://lasmaletas.es/4075-large_default/cartera-hombre-de-piel.jpg",
-      "id": 9
-    },
-    {
-      "name": "Cartera",
-      "price": "23",
-      "description": "Mochila muy bonita",
-      "image": "https://lasmaletas.es/4075-large_default/cartera-hombre-de-piel.jpg",
-      "id": 10
-    }
-  ],
-  "register": [
-    {
-      "email": "prueba@prueba.com",
-      "password": "Prueba1234!",
-      "id": 1
-    },
-    {
-      "email": "prueba1@prueba.com",
-      "password": "Prueba1234!",
-      "id": 2
-    },
-    {
-      "email": "prueba2@prueba.com",
-      "password": "Prueba1234!",
-      "id": 3
-    },
-    {
-      "email": "prueba33@prueba.com",
-      "password": "Prueba1234!",
-      "id": 4
-    },
-    {
-      "email": "prueba4@prueba.com",
-      "password": "Prueba1234!",
-      "id": 5
-    }
-  ],
-  "login": [
-    {
-      "email": "prueba@prueba.com",
-      "password": "Prueba1234!",
-      "id": 1
-    },
-    {
-      "email": "prueba1@prueba.com",
-      "password": "Prueba1234!",
-      "id": 2
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "name": "Camión de carga pesada",
+    "price": "100000",
+    "category": "Transporte",
+    "description": "Camión de carga pesada con capacidad de transporte de hasta 30 toneladas",
+    "image": "https://img.directindustry.es/images_di/photo-g/50713-15093129.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Camión de reparto",
+    "price": "50000",
+    "category": "Transporte",
+    "description": "Camión de reparto para distribución de mercancías en áreas urbanas",
+    "image": "https://previews.123rf.com/images/mishatc/mishatc1007/mishatc100700003/7427523-cami%C3%B3n-de-reparto-aislado-en-blanco.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Camión cisterna",
+    "price": "75000",
+    "category": "Transporte",
+    "description": "Camión cisterna para transporte y distribución de líquidos a granel",
+    "image": "https://example.com/camion-cisterna.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Camión grúa",
+    "price": "90000",
+    "category": "Transporte",
+    "description": "Camión grúa para levantamiento y transporte de cargas pesadas",
+    "image": "https://example.com/camion-grua.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Camión volquete",
+    "price": "80000",
+    "category": "Transporte",
+    "description": "Camión volquete para transporte y descarga de materiales a granel",
+    "image": "https://example.com/camion-volquete.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Camión frigorífico",
+    "price": "95000",
+    "category": "Transporte",
+    "description": "Camión frigorífico para transporte de productos perecederos a temperatura controlada",
+    "image": "https://example.com/camion-frigorifico.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Camión plataforma",
+    "price": "70000",
+    "category": "Transporte",
+    "description": "Camión plataforma para transporte de carga en palets o contenedores",
+    "image": "https://example.com/camion-plataforma.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Camión remolcador",
+    "price": "85000",
+    "category": "Transporte",
+    "description": "Camión remolcador para transporte de remolques y vehículos",
+    "image": "https://example.com/camion-remolcador.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Camión de volteo",
+    "price": "88000",
+    "category": "Transporte",
+    "description": "Camión de volteo para transporte y descarga de materiales a granel mediante basculante",
+    "image": "https://example.com/camion-volteo.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Camión autobomba",
+    "price": "120000",
+    "category": "Transporte",
+    "description": "Camión autobomba para transporte y bombeo de hormigón en obras de construcción",
+    "image": "https://example.com/camion-autobomba.jpg"
+  }
+]
+
+
+autos<<<<<<<<<<<<<<<
+
+[
+  {
+    "id": "1",
+    "name": "Sedán",
+    "price": "25000",
+    "category": "Automóviles",
+    "description": "Auto sedán de 4 puertas con capacidad para 5 pasajeros",
+    "image": "https://example.com/sedan.jpg"
+  },
+  {
+    "id": "2",
+    "name": "SUV",
+    "price": "35000",
+    "category": "Automóviles",
+    "description": "Vehículo utilitario deportivo (SUV) con espacio amplio y tracción en las cuatro ruedas",
+    "image": "https://example.com/suv.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Hatchback",
+    "price": "20000",
+    "category": "Automóviles",
+    "description": "Auto hatchback compacto de 5 puertas con estilo versátil y eficiencia en el consumo de combustible",
+    "image": "https://example.com/hatchback.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Deportivo",
+    "price": "50000",
+    "category": "Automóviles",
+    "description": "Auto deportivo de alto rendimiento con diseño aerodinámico y potente motor",
+    "image": "https://example.com/deportivo.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Convertible",
+    "price": "40000",
+    "category": "Automóviles",
+    "description": "Auto convertible con techo retráctil para disfrutar de la conducción al aire libre",
+    "image": "https://example.com/convertible.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Coupé",
+    "price": "45000",
+    "category": "Automóviles",
+    "description": "Auto coupé de estilo elegante y líneas deportivas con capacidad para 2 puertas",
+    "image": "https://example.com/coupe.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Familiar",
+    "price": "30000",
+    "category": "Automóviles",
+    "description": "Auto familiar espacioso con gran capacidad de carga y asientos traseros plegables",
+    "image": "https://example.com/familiar.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Eléctrico",
+    "price": "60000",
+    "category": "Automóviles",
+    "description": "Auto eléctrico de cero emisiones con batería recargable y tecnología avanzada",
+    "image": "https://example.com/electrico.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Camioneta",
+    "price": "38000",
+    "category": "Automóviles",
+    "description": "Vehículo de carga y pasajeros con plataforma trasera para transportar cargas voluminosas",
+    "image": "https://example.com/camioneta.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Clásico",
+    "price": "70000",
+    "category": "Automóviles",
+    "description": "Auto clásico y antiguo con un diseño icónico y valor histórico",
+    "image": "https://example.com/clasico.jpg"
+  }
+]
+
+
+Motos <<<<<<<<<<<<<<<<<
+
+[
+  {
+    "id": "1",
+    "name": "Sport",
+    "price": "15000",
+    "category": "Motos",
+    "description": "Moto deportiva de alta velocidad y diseño aerodinámico",
+    "image": "https://example.com/sport.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Cruiser",
+    "price": "12000",
+    "category": "Motos",
+    "description": "Moto cruiser con estilo clásico y posición de conducción relajada",
+    "image": "https://example.com/cruiser.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Enduro",
+    "price": "10000",
+    "category": "Motos",
+    "description": "Moto enduro versátil para uso en carretera y fuera de ella",
+    "image": "https://example.com/enduro.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Scooter",
+    "price": "8000",
+    "category": "Motos",
+    "description": "Moto scooter práctica y cómoda para desplazamientos urbanos",
+    "image": "https://example.com/scooter.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Naked",
+    "price": "11000",
+    "category": "Motos",
+    "description": "Moto naked con diseño minimalista y conducción ágil",
+    "image": "https://example.com/naked.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Touring",
+    "price": "18000",
+    "category": "Motos",
+    "description": "Moto touring diseñada para viajes de larga distancia y comodidad",
+    "image": "https://example.com/touring.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Motocross",
+    "price": "9000",
+    "category": "Motos",
+    "description": "Moto motocross para competencias off-road y saltos",
+    "image": "https://example.com/motocross.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Scooter Eléctrico",
+    "price": "10000",
+    "category": "Motos",
+    "description": "Moto scooter eléctrica con cero emisiones y bajo consumo de energía",
+    "image": "https://example.com/scooter-electrico.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Custom",
+    "price": "14000",
+    "category": "Motos",
+    "description": "Moto custom con diseño personalizado y estilo único",
+    "image": "https://example.com/custom.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Trail",
+    "price": "9500",
+    "category": "Motos",
+    "description": "Moto trail versátil para todo tipo de terrenos y aventuras",
+    "image": "https://example.com/trail.jpg"
+  }
+]

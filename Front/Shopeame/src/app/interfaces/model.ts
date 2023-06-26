@@ -8,8 +8,6 @@ export interface VehiculosI{
 }
 
 export interface UserI{
-    id?: string;
     email: string;
-    password: string;
-    role?: string;
+    password: string
 }

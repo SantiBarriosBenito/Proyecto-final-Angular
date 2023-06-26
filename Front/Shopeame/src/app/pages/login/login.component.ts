@@ -27,9 +27,10 @@ export class LoginComponent {
     if(this.loginForm.valid){
       let user: UserI = this.loginForm.value;
       this.authApi.login(user).subscribe((data: any) =>{
-        localStorage.setItem("token", data.token);
-        localStorage.setItem('user', JSON.stringify(data.user));
-        this.router.navigate(['/login']);
+
+        localStorage.setItem('token', data.accessToken);
+        localStorage.setItem('usuario', data.user.email);
+        this.router.navigate(['/']);
       })
     }
   }

@@ -26,8 +26,13 @@ export class RegisterComponent implements OnInit{
     this.submitted = true;
     if(this.registerForm.valid){
       let user: UserI = this.registerForm.value;
-      this.authApi.register(user).subscribe((data) =>{
+      this.authApi.register(user).subscribe((data:any) =>{
+        // console.log(data);
+        localStorage.setItem('token', data.accessToken);
+        localStorage.setItem('usuario', data.user.email);
         this.router.navigate(['/']);
+
+
       })
     }
   }

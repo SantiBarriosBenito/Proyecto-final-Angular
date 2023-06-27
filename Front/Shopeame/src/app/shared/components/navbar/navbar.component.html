@@ -1,15 +1,17 @@
-    <article class="menu">
+<article class="menu">       
+    <nav class="container-fluid">
         <div class="logo-container ms-3">
-            <img class="Logo" src="../../../../assets/images/onwheelsLogo-removebg-preview.png" alt="logo de OnWheels">
+            <a routerLink="/">
+                <img src="../../../../assets/images/onwheelsLogo-removebg-preview.png" alt="logo de OnWheels">
+            </a>
         </div>
-        <nav class="container">
-        <div class="container nav__products">
+        <div class="nav__products me-4">
             <a routerLink="/products" class="navLink">
                 <img src="./assets/images/products.svg" alt="Productos" class="icono">
                 <span>Productos</span>
             </a>
         </div>
-        <div *ngIf="authApi.getToken()" class="container nav__add_products">
+        <div *ngIf="authApi.getToken()" class=" nav__add_products">
             <a routerLink="/add" class="navLink">
                 <img src="./assets/images/add.svg" alt="Añadir productos" class="icono">
                 <span>Añadir productos</span>
@@ -17,20 +19,22 @@
         </div>
     </nav>
     <nav class="login">
-        <div *ngIf="!authApi.getToken()" class="container nav__login">
+        <div *ngIf="!authApi.getToken()" class=" nav__login">
             <a routerLink="/login" class="navLink">
                 <img src="./assets/images/user.svg" alt="Login" class="icono">
                 <span>Login</span>
             </a>
         </div>
-        <div *ngIf="!authApi.getToken()" class="container nav__register">
+        <div *ngIf="!authApi.getToken()" class=" nav__register">
             <a routerLink="/register" class="navLink">
                 <img src="./assets/images/register.svg" alt="Register" class="icono">
                 <span>Register</span>
             </a>
         </div>
-        <p  *ngIf="authApi.getToken()"> {{authApi.getUsuario()}}</p>
-        <button  *ngIf="authApi.getToken()" (click)="logout()">Logout</button>
+        <div class="login">
+            <p class="Saludo" *ngIf="authApi.getToken()">Bienvenid@! {{authApi.getUsuario()}}</p>
+            <button  *ngIf="authApi.getToken()" (click)="logout()">Logout</button>
+        </div>
     </nav>
 </article>
 

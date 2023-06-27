@@ -266,6 +266,11 @@
       "email": "alberto@gmail.com",
       "password": "$2a$10$cBiaRDfJe1BESmFar8Z37OIJUBI/.XHqfVPCDQ865NMFBgCIi.UR2",
       "id": 5
+    },
+    {
+      "email": "pepe1234@gmail.com",
+      "password": "$2a$10$UnDpGACXitl.OoUcqxIyUu6S/fGJY44RBuhhFRUHxRAWFSZfCgMUq",
+      "id": 6
     }
   ]
 }

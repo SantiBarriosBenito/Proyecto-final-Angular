@@ -13,7 +13,7 @@ export class AuthGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      console.log(this.authApi.getRole())
+      // console.log(this.authApi.getRole())
       // if(!this.authApi.getToken() || this.authApi.getRole() !== 'admin')
        if(!this.authApi.getToken())
        {

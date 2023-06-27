@@ -16,7 +16,7 @@
                 <span>Productos</span>
             </a>
         </div>
-        <div class="container nav__add_products">
+        <div *ngIf="!authApi.getToken()" class="container nav__add_products">
             <a routerLink="/add" class="navLink">
                 <img src="./assets/images/add.svg" alt="Añadir productos" class="icono">
                 <span>Añadir productos</span>

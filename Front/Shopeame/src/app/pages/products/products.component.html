@@ -4,14 +4,17 @@
     id="value"
     (focus)="filtrar($event)"
   /> -->
-<input name="value" [(ngModel)]="valueF" id="value" type="text" (input)="filtrarDatos(filtro.value)" #filtro>
-<select (change)="filtrarCategorias(categorias.value)" #categorias>
+<div class="divinput">
+   <input name="value" [(ngModel)]="valueF" id="value" type="text" (input)="filtrarDatos(filtro.value)" #filtro>
+   <select (change)="filtrarCategorias(categorias.value)" #categorias>
     <option value="" >Todas</option>
     <option value="Transporte">Camiones</option>
     <option value="Automóviles">Autos</option>
     <option value="Motos">Motos</option>
     
-  </select>
+    </select>
+</div>
+    
 <section >
     <!-- <article *ngFor="let product of productList" routerLink="/products/{{product.id}}"> -->
     <article *ngFor="let product of filtroList" (click)="mirarDetalle(product.id)">

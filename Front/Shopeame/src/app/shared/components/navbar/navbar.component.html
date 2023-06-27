@@ -11,7 +11,7 @@
             </a>
         </div>
         <div class="container nav__products">
-            <a routerLink="/add" class="navLink">
+            <a routerLink="/products" class="navLink">
                 <img src="./assets/images/products.svg" alt="Productos" class="icono">
                 <span>Productos</span>
             </a>
@@ -24,18 +24,19 @@
         </div>
     </nav>
     <nav class="login">
-        <div class="container nav__login">
+        <div *ngIf="!authApi.getToken()" class="container nav__login">
             <a routerLink="/login" class="navLink">
                 <img src="./assets/images/user.svg" alt="Login" class="icono">
                 <span>Login</span>
             </a>
         </div>
-        <div class="container nav__register">
+        <div *ngIf="!authApi.getToken()" class="container nav__register">
             <a routerLink="/register" class="navLink">
                 <img src="./assets/images/register.svg" alt="Register" class="icono">
                 <span>Register</span>
             </a>
         </div>
+        <button  *ngIf="authApi.getToken()"> {{authApi.getUsuario()}}</button>
         <button  *ngIf="authApi.getToken()" (click)="logout()">Logout</button>
     </nav>
 </article>

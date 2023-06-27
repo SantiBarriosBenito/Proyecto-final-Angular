@@ -1,17 +1,37 @@
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-    <div class="divinput">
+<div class="container">
+  <div class="details">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="divinput">
         <label for="email">Email</label>
-        <input id="email"  formControlName="email" type="text"/>
-        <p *ngIf= "(submitted && registerForm?.get('email')?.hasError('required'))">Este campo es requerido</p>
-        <p *ngIf= "(submitted && registerForm?.get('email')?.hasError('pattern'))">No cumple el formato de email</p>
-    </div>
-    <div class="divinput">
+        <input id="email" formControlName="email" type="text" />
+        <p
+          *ngIf="submitted && registerForm?.get('email')?.hasError('required')"
+        >
+          Este campo es requerido
+        </p>
+        <p *ngIf="submitted && registerForm?.get('email')?.hasError('pattern')">
+          No cumple el formato de email
+        </p>
+      </div>
+      <div class="divinput">
         <label for="password">Contraseña</label>
-        <input id="password"  formControlName="password" type="password"/>
-        <p *ngIf= "(submitted && registerForm?.get('password')?.hasError('required'))">Este campo es requerido</p>
-        <p *ngIf= "(submitted && registerForm?.get('password')?.hasError('pattern'))">No cumple el formato de password</p>
-
-    </div>
-    <button>Registrarse</button>
-
-</form>
+        <input id="password" formControlName="password" type="password" />
+        <p
+          *ngIf="
+            submitted && registerForm?.get('password')?.hasError('required')
+          "
+        >
+          Este campo es requerido
+        </p>
+        <p
+          *ngIf="
+            submitted && registerForm?.get('password')?.hasError('pattern')
+          "
+        >
+          No cumple el formato de password
+        </p>
+      </div>
+      <button>Registrarse</button>
+    </form>
+  </div>
+</div>

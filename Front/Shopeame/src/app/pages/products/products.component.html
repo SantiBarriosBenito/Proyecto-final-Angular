@@ -1,4 +1,10 @@
-<input type="text" (input)="filtrarDatos()" #filtro>
+<!-- <input
+    name="value"
+    [(ngModel)]="value"
+    id="value"
+    (focus)="filtrar($event)"
+  /> -->
+<input name="value" [(ngModel)]="valueF" id="value" type="text" (input)="filtrarDatos(filtro.value)" #filtro>
 <select (change)="filtrarCategorias(categorias.value)" #categorias>
     <option value="" >Todas</option>
     <option value="Transporte">Camiones</option>

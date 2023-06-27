@@ -12,8 +12,9 @@ import { Router } from '@angular/router';
 export class ProductsComponent {
 
 productList!: VehiculosI[];
-categoriaList!: VehiculosI[];
+categoriaList: VehiculosI[] = [];
 filtroList!: VehiculosI[];
+valueF:string = "";
 
 constructor(private productApi: ServicesService, public authApi: AuthService, private router: Router){}
 
@@ -25,7 +26,6 @@ ngOnInit(): void {
 }
 
 mirarDetalle (id:any) {
-  console.log(id);
 
   if (this.authApi.getToken())
    {
@@ -33,11 +33,26 @@ mirarDetalle (id:any) {
    }   
   }
 
-  filtrarDatos(){
-    
+  filtrarDatos(ev: string){
+  
+    if(this.categoriaList.length > 0){
+      this.filtroList = this.categoriaList.filter( (item) =>
+         (item.name.toLowerCase().includes(ev.toLowerCase()))
+        )
+    } else{
+      
+      this.filtroList = this.productList.filter( (item) =>
+      (item.name.toLowerCase().includes(ev.toLowerCase()))
+     )
+    }
   }
 
   filtrarCategorias(categoria:string){
+   this.valueF = ""
+    if(categoria == ""){
+      this.categoriaList = [];
+      this.filtroList = [...this.productList];
+    } else{
     this.categoriaList=this.productList.filter((item) => 
       item.category == categoria
     )
@@ -46,5 +61,6 @@ mirarDetalle (id:any) {
        item.category == categoria
     )
   }
+}
 
 }

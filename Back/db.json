@@ -269,6 +269,11 @@
       "email": "prueba1@prueba.com",
       "password": "$2a$10$eeKcJ3C4xG5LUoX6KR3.2.HV5fhOpYWGWoGD3XBxsahQxOPmLXYvG",
       "id": 4
+    },
+    {
+      "email": "alberto@gmail.com",
+      "password": "$2a$10$cBiaRDfJe1BESmFar8Z37OIJUBI/.XHqfVPCDQ865NMFBgCIi.UR2",
+      "id": 5
     }
   ]
 }

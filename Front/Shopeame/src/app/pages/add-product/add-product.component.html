@@ -1,49 +1,72 @@
-<section>
-<form [formGroup]="productForm" (ngSubmit)="addProduct()">
-    <div class="divinput">
+<div class="container">
+  <div class="details">
+    <form [formGroup]="productForm" (ngSubmit)="addProduct()">
+      <div class="divinput">
         <label for="name">Nombre del producto</label>
-        <input id="name"  formControlName="name" type="text"/>
-        <p *ngIf= "(submitted && productForm?.get('name')?.hasError('required'))">Este campo es requerido</p>
-    </div>
-    <div class="divinput">
+        <input id="name" formControlName="name" type="text" />
+        <p
+          class="warning"
+          *ngIf="submitted && productForm?.get('name')?.hasError('required')"
+        >
+          Este campo es requerido
+        </p>
+      </div>
+      <div class="divinput">
         <label for="image">Imagen</label>
-        <input id="image" formControlName="image" type="text"/>
-        <p *ngIf= "(submitted && productForm?.get('image')?.hasError('required'))">Este campo es requerido</p>
-    </div>
-    <div class="divinput">
+        <input id="image" formControlName="image" type="text" />
+        <p
+          class="warning"
+          *ngIf="submitted && productForm?.get('image')?.hasError('required')"
+        >
+          Este campo es requerido
+        </p>
+      </div>
+      <div class="divinput">
         <label for="price">Precio</label>
-        <input id="price"  formControlName="price" type="text"/>
-        <p *ngIf= "(submitted && productForm?.get('price')?.hasError('required'))">Este campo es requerido</p>
-    </div>
-    <div class="divinput">
+        <input id="price" formControlName="price" type="text" />
+        <p
+          class="warning"
+          *ngIf="submitted && productForm?.get('price')?.hasError('required')"
+        >
+          Este campo es requerido
+        </p>
+      </div>
+      <div class="divinput">
         <label for="description">Descripción</label>
-        <input id="description"  formControlName="description" type="text"/>
-        <p *ngIf= "(submitted && productForm?.get('description')?.hasError('required'))">Este campo es requerido</p>
-        
-    </div>
-    <div class="custom-select-wrapper">
-        <select class="" formControlName="category">
-          <option value="" selected disabled hidden>Categorias</option>
+        <input id="description" formControlName="description" type="text" />
+        <p
+          class="warning"
+          *ngIf="
+            submitted && productForm?.get('description')?.hasError('required')
+          "
+        >
+          Este campo es requerido
+        </p>
+      </div>
+      <label for="category">Categoría</label>
+      <div class="custom-select-wrapper">
+        <select class="divselector" formControlName="category">
+          <option value="" selected disabled hidden>Elige una categoría</option>
           <option value="Camiones">Camiones</option>
           <option value="Autos">Autos</option>
           <option value="Motos">Motos</option>
-          
         </select>
       </div>
-    <button>Añadir producto</button>
-</form>
+      <button>Añadir producto</button>
+    </form>
 
-<div class="product" *ngIf="product">
-    <article>
+    <div class="product" *ngIf="product">
+      <article>
         <div class="contenedorimg">
-            <img src="{{product.image}}" alt="{{product.name}}" />
+          <img src="{{ product.image }}" alt="{{ product.name }}" />
         </div>
         <div class="contenedortexto">
-            <h3>Nombre: {{product.name}}</h3>
-            <p class="price">Precio: {{product.price}} €</p>
-            <p class="description">Descripción: {{product.description}}</p>
-            
+          <h3>Nombre: {{ product.name }}</h3>
+          <p class="price">Precio: {{ product.price }} €</p>
+          <p class="description">Descripción: {{ product.description }}</p>
+          <p class="category">Categoría: {{ product.category }}</p>
         </div>
-    </article>
+      </article>
+    </div>
+  </div>
 </div>
-</section>

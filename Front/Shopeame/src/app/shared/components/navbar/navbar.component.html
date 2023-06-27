@@ -33,7 +33,7 @@
                 <span>Register</span>
             </a>
         </div>
-        <button  *ngIf="authApi.getToken()"> {{authApi.getUsuario()}}</button>
+        <p  *ngIf="authApi.getToken()"> {{authApi.getUsuario()}}</p>
         <button  *ngIf="authApi.getToken()" (click)="logout()">Logout</button>
     </nav>
 </article>

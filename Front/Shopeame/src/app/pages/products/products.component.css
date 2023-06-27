@@ -15,28 +15,23 @@ article{
     margin: 20px 0;
 }
 
-img{
-    width: 100%;
-}
 .contenedorimg{
-    height: 460px;
+    height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+img{
+    width: 100%;
+}
+
 .contenedortexto{
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: 200px;
     width: 100%;
     
-}
-
-.contenedorbotones{
-    display: flex;
-    justify-content:end;
-    align-items: center;
 }
 
 .price{
@@ -45,16 +40,16 @@ img{
     color: #FFC970;
     margin: 5px 0;
 }
+
 p{
     margin: 5px 0;
 }
+
 h3{
 margin: 7px 0;
 font-size: 30px;
 }
-button{
-    margin: 5px 2px;
-}
+
 
 .divinput{
     display: flex;

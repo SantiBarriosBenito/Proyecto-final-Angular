@@ -239,6 +239,14 @@
       "category": "Motos",
       "description": "Moto trail versátil para todo tipo de terrenos y aventuras",
       "image": "https://i.pinimg.com/originals/66/6c/2e/666c2e8cf3e1b3e606e01700b3de1124.png"
+    },
+    {
+      "name": "Argentum",
+      "price": "234",
+      "description": "dsdsdsds",
+      "image": "dasdasdas",
+      "category": "Camiones",
+      "id": "90CaHxw"
     }
   ],
   "users": [

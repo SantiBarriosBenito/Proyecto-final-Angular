@@ -1,7 +1,7 @@
 {
   "vehiculos": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Camión de carga pesada",
       "price": "100000",
       "category": "Transporte",
@@ -9,7 +9,7 @@
       "image": "https://img.directindustry.es/images_di/photo-g/50713-15093129.jpg"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Camión de reparto",
       "price": "50000",
       "category": "Transporte",
@@ -17,7 +17,7 @@
       "image": "https://previews.123rf.com/images/mishatc/mishatc1007/mishatc100700003/7427523-cami%C3%B3n-de-reparto-aislado-en-blanco.jpg"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Camión cisterna",
       "price": "75000",
       "category": "Transporte",
@@ -25,7 +25,7 @@
       "image": "https://www.preventgroup.es/wp-content/uploads/sites/334/2020/04/camion-cisterna.jpg"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Camión grúa",
       "price": "90000",
       "category": "Transporte",
@@ -33,7 +33,7 @@
       "image": "https://renton.pe/wp-content/uploads/2022/02/camion-grua-1.jpg"
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Camión volquete",
       "price": "80000",
       "category": "Transporte",
@@ -41,7 +41,7 @@
       "image": "https://renton.pe/wp-content/uploads/2022/02/camion-grua-1.jpg"
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Camión frigorífico",
       "price": "95000",
       "category": "Transporte",
@@ -49,7 +49,7 @@
       "image": "https://media.istockphoto.com/id/1168754657/es/foto/cami%C3%B3n-refrigerado-aislado.jpg?s=2048x2048&w=is&k=20&c=eVR4WwZ4y2pBdZ34CK1wm29trm9RxKlXEVGoqj3O3Uo="
     },
     {
-      "id": "7",
+      "id": 7,
       "name": "Camión plataforma",
       "price": "70000",
       "category": "Transporte",
@@ -57,7 +57,7 @@
       "image": "https://www.shutterstock.com/image-illustration/isolated-platform-truck-on-white-600w-417115471.jpg"
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Camión remolcador",
       "price": "85000",
       "category": "Transporte",
@@ -65,7 +65,7 @@
       "image": "http://www.gkstrucks.com/web2/sites/default/files/DSC05013.JPG?timestamp=1687774175102"
     },
     {
-      "id": "9",
+      "id": 9,
       "name": "Camión de volteo",
       "price": "88000",
       "category": "Transporte",
@@ -73,7 +73,7 @@
       "image": "https://static.wixstatic.com/media/f4cdca_69145c4db2ed450d818d146f2b46fe07~mv2.png/v1/fill/w_448,h_346,al_c,lg_1,q_85,enc_auto/f4cdca_69145c4db2ed450d818d146f2b46fe07~mv2.png"
     },
     {
-      "id": "10",
+      "id": 10,
       "name": "Camión autobomba",
       "price": "120000",
       "category": "Transporte",
@@ -81,7 +81,7 @@
       "image": "https://ume.defensa.gob.es/Galerias/medios/Imagenes/Autobomba_URO.bmp"
     },
     {
-      "id": "11",
+      "id": 11,
       "name": "Sedán",
       "price": "25000",
       "category": "Automóviles",
@@ -89,7 +89,7 @@
       "image": "https://img.freepik.com/vector-premium/coche-rojo-tridimensional-aislado-fondo-blanco_53876-12092.jpg?w=1060"
     },
     {
-      "id": "12",
+      "id": 12,
       "name": "SUV",
       "price": "35000",
       "category": "Automóviles",
@@ -97,7 +97,7 @@
       "image": "https://s1.1zoom.me/b5050/421/Renault_Captur_White_background_White_514995_2560x1440.jpg"
     },
     {
-      "id": "13",
+      "id": 13,
       "name": "Hatchback",
       "price": "20000",
       "category": "Automóviles",
@@ -105,7 +105,7 @@
       "image": "https://cdn.pixabay.com/photo/2018/05/19/14/08/vintage-car-3413555_1280.jpg"
     },
     {
-      "id": "14",
+      "id": 14,
       "name": "Deportivo",
       "price": "50000",
       "category": "Automóviles",
@@ -113,7 +113,7 @@
       "image": "https://cdn.pixabay.com/photo/2019/12/12/18/26/car-4691378_1280.jpg"
     },
     {
-      "id": "15",
+      "id": 15,
       "name": "Convertible",
       "price": "40000",
       "category": "Automóviles",
@@ -121,7 +121,7 @@
       "image": "https://cdn.pixabay.com/photo/2018/05/19/14/08/vintage-car-3413554_1280.jpg"
     },
     {
-      "id": "16",
+      "id": 16,
       "name": "Coupé",
       "price": "45000",
       "category": "Automóviles",
@@ -129,7 +129,7 @@
       "image": "https://carwow-es.imgix.net/prismic/ca47d858-28f1-41bf-8f44-cb0844e7ed4c_Volvo%2BS60.png?auto=format&cs=tinysrgb&fit=clip&ixlib=rb-1.1.0&q=60&w=750"
     },
     {
-      "id": "17",
+      "id": 17,
       "name": "Familiar",
       "price": "30000",
       "category": "Automóviles",
@@ -137,7 +137,7 @@
       "image": "https://todosobrecoches.com/wp-content/uploads/2020/11/mejores-suv-pequenos.jpg"
     },
     {
-      "id": "18",
+      "id": 18,
       "name": "Eléctrico",
       "price": "60000",
       "category": "Automóviles",
@@ -145,7 +145,7 @@
       "image": "https://img.freepik.com/vector-gratis/coche-hatchback-negro-aislado-vector-blanco_53876-64404.jpg?w=2000"
     },
     {
-      "id": "19",
+      "id": 19,
       "name": "Camioneta",
       "price": "38000",
       "category": "Automóviles",
@@ -153,7 +153,7 @@
       "image": "https://carwow-es.imgix.net/prismic/60bb4d49-c99e-434e-b312-8390d2309448_Porsche%2B911.png?auto=format&cs=tinysrgb&fit=clip&ixlib=rb-1.1.0&q=60&w=750"
     },
     {
-      "id": "20",
+      "id": 20,
       "name": "Clásico",
       "price": "70000",
       "category": "Automóviles",
@@ -161,7 +161,7 @@
       "image": "https://cochesnuevos.autofacil.es/img/BMW_SERIE_4_COUPE_2021.jpg"
     },
     {
-      "id": "21",
+      "id": 21,
       "name": "Sport",
       "price": "15000",
       "category": "Motos",
@@ -169,7 +169,7 @@
       "image": "https://pngimg.com/uploads/motorcycle/motorcycle_PNG3157.png"
     },
     {
-      "id": "22",
+      "id": 22,
       "name": "Cruiser",
       "price": "12000",
       "category": "Motos",
@@ -177,7 +177,7 @@
       "image": "https://img2.freepng.es/20190326/cwp/kisspng-kawasaki-ninja-65-r-kawasaki-motorcycles-sport-bik-5c9aa786ece9f4.0383954715536393029704.jpg"
     },
     {
-      "id": "23",
+      "id": 23,
       "name": "Enduro",
       "price": "10000",
       "category": "Motos",
@@ -185,7 +185,7 @@
       "image": "https://www.pngarts.com/files/1/Yamaha-Motorcycle-PNG-Photo.png"
     },
     {
-      "id": "24",
+      "id": 24,
       "name": "Scooter",
       "price": "8000",
       "category": "Motos",
@@ -193,7 +193,7 @@
       "image": "https://img2.freepng.es/20180504/xje/kisspng-kawasaki-ninja-300-kawasaki-motorcycles-sport-bike-5aec58a41af510.3759348815254386281104.jpg"
     },
     {
-      "id": "25",
+      "id": 25,
       "name": "Naked",
       "price": "11000",
       "category": "Motos",
@@ -201,7 +201,7 @@
       "image": "https://pngimg.com/uploads/motorcycle/motorcycle_PNG3134.png"
     },
     {
-      "id": "26",
+      "id": 26,
       "name": "Touring",
       "price": "18000",
       "category": "Motos",
@@ -209,7 +209,7 @@
       "image": "https://i.pinimg.com/originals/03/83/30/038330d4ea054748f84479fec7aca366.jpg"
     },
     {
-      "id": "27",
+      "id": 27,
       "name": "Motocross",
       "price": "9000",
       "category": "Motos",
@@ -217,7 +217,7 @@
       "image": "https://pngimg.com/uploads/motorcycle/motorcycle_PNG3130.png"
     },
     {
-      "id": "28",
+      "id": 28,
       "name": "Scooter Eléctrico",
       "price": "10000",
       "category": "Motos",
@@ -225,7 +225,7 @@
       "image": "https://pngimg.com/uploads/motorcycle/motorcycle_PNG3153.png"
     },
     {
-      "id": "29",
+      "id": 29,
       "name": "Custom",
       "price": "14000",
       "category": "Motos",
@@ -233,20 +233,12 @@
       "image": "https://img2.freepng.es/20190220/vee/kisspng-harley-davidson-fat-boy-custom-motorcycle-softail-5c6dcf8bea62c0.5537387715507004279601.jpg"
     },
     {
-      "id": "30",
+      "id": 30,
       "name": "Trail",
       "price": "9500",
       "category": "Motos",
       "description": "Moto trail versátil para todo tipo de terrenos y aventuras",
       "image": "https://i.pinimg.com/originals/66/6c/2e/666c2e8cf3e1b3e606e01700b3de1124.png"
-    },
-    {
-      "name": "Argentum",
-      "price": "234",
-      "description": "dsdsdsds",
-      "image": "dasdasdas",
-      "category": "Camiones",
-      "id": "90CaHxw"
     }
   ],
   "users": [

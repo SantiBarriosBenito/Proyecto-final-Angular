@@ -5,30 +5,37 @@
     (focus)="filtrar($event)"
   /> -->
 <div class="divinput">
-   <input name="value" [(ngModel)]="valueF" id="value" type="text" (input)="filtrarDatos(filtro.value)" #filtro>
-   <select (change)="filtrarCategorias(categorias.value)" #categorias>
-    <option value="" >Todas</option>
+  <input
+    name="value"
+    [(ngModel)]="valueF"
+    id="value"
+    type="text"
+    (input)="filtrarDatos(filtro.value)"
+    #filtro
+  />
+  <select (change)="filtrarCategorias(categorias.value)" #categorias>
+    <option value="">Todas</option>
     <option value="Transporte">Camiones</option>
     <option value="Automóviles">Autos</option>
     <option value="Motos">Motos</option>
-    
-    </select>
+  </select>
 </div>
-    
-<section >
-    <!-- <article *ngFor="let product of productList" routerLink="/products/{{product.id}}"> -->
-    <article *ngFor="let product of filtroList" (click)="mirarDetalle(product.id)">
-        <div class="contenedorimg" >
-            <img src="{{product?.image}}" alt="{{product.name}}" >
-        </div>
-        <div class="contenedortexto">
-            <h3>{{product?.name}}</h3>
-            <p class="category">{{product?.category}}</p>
-            <p class="price">{{product?.price}} €</p>
-            <p class="description">{{product?.description}}</p>
-        </div>
-        
-    </article>
-    
-</section>
 
+<section>
+  <!-- <article *ngFor="let product of productList" routerLink="/products/{{product.id}}"> -->
+  <article
+    *ngFor="let product of filtroList"
+    (click)="mirarDetalle(product.id)"
+  >
+    <div class="contenedorimg">
+      <img src="{{ product?.image }}" alt="{{ product.name }}" />
+    </div>
+    <div class="contenedortexto">
+      <h3>{{ product?.name }}</h3>
+      <p class="category">{{ product?.category }}</p>
+      <p class="price">{{ product?.price }} €</p>
+      <p class="description">{{ product?.description }}</p>
+    </div>
+    <a routerLink="/register" class="editar-btn">Editar</a>
+  </article>
+</section>

@@ -1,32 +1,18 @@
-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo{
-    height: 12vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
 .menu{
     height: 10vh;
     background-color: #FFC970;
     width: 100%;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     display: flex;
 }
+
 nav{
     display: flex;
-    height: 100%;
-    gap: 30px;
+    height: 100%;    
     background-color: #FFC970;
 }
+
 .container{
     display: flex;
     flex-direction: column;
@@ -35,19 +21,16 @@ nav{
     align-items: center;
     width: 140px;
 }
+
 .icono{
     width: 30px;
     padding: .2rem;
 }
+
 a{
     color: black;
 }
-.login{
-    width: 30%;
-    height: 30px;
-    display: flex;
-    justify-content: end;
-}
+
 .nav__home, .nav__products, .nav__add_products, .nav__register, .nav__login{
     display: flex;
     align-items: center;
@@ -60,8 +43,23 @@ a{
 .navLink{
     display: flex;
     align-items: center;    
+    text-decoration: none;
 }
 
 .nav__add_products{
     width: fit-content;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+  
+.logo {
+    width: 120px; 
+    margin-right: 10px; 
+}
+.icono1{
+    width: 30px;
+    padding: .1rem;
 }

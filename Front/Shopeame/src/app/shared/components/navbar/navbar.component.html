@@ -2,47 +2,7 @@
         <div class="logo-container ms-3">
             <img class="Logo" src="../../../../assets/images/onwheelsLogo-removebg-preview.png" alt="logo de OnWheels">
         </div>
-<<<<<<< HEAD
-        <nav class="d-flex justify-content-center">
-            
-            <div class="container nav__home">
-                <a routerLink="/" class="navLink">
-                    <img class="icono" src="./assets/images/home.svg">
-                    <span>Inicio</span>
-                </a>
-            </div>
-            <div class="container nav__products">
-                <a routerLink="/products" class="navLink">
-                    <img src="./assets/images/products.svg" alt="Productos" class="icono">
-                    <span>Productos</span>
-                </a>
-            </div>
-            <div *ngIf="authApi.getToken()" class="container nav__add_products">
-                <a routerLink="/add" class="navLink">
-                    <img src="./assets/images/add.svg" alt="Añadir productos" class="icono">
-                    <span>Añadir productos</span>
-                </a>
-            </div>
-        </nav>
-        <nav class="login">
-            <div *ngIf="!authApi.getToken()" class="container nav__login">
-                <a routerLink="/login" class="navLink">
-                    <img src="./assets/images/user.svg" alt="Login" class="icono">
-                    <span>Login</span>
-                </a>
-            </div>
-            <div *ngIf="!authApi.getToken()" class="container nav__register me-4">
-                <a routerLink="/register" class="navLink">
-                    <img src="./assets/images/register.svg" alt="Register" class="icono ">
-                    <span>Register</span>
-                </a>
-            </div>
-            <button  *ngIf="authApi.getToken()"> {{authApi.getUsuario()}}</button>
-            <button  *ngIf="authApi.getToken()" (click)="logout()">Logout</button>
-        </nav>
-    </article>
-   
-=======
+        <nav class="container">
         <div class="container nav__products">
             <a routerLink="/products" class="navLink">
                 <img src="./assets/images/products.svg" alt="Productos" class="icono">
@@ -73,5 +33,4 @@
         <button  *ngIf="authApi.getToken()" (click)="logout()">Logout</button>
     </nav>
 </article>
-</section>
->>>>>>> 6e98fadd7cd10eb1d25645add6623e4000ae1c49
+

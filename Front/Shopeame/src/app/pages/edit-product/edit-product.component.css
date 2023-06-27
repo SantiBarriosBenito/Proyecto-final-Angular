@@ -104,7 +104,8 @@ section{
   }
   
   img {
-    height: 280px;
+    /* height: 280px; */
+    max-width: 250px;
   }
   .contenedorimg {
     height: 300px;
